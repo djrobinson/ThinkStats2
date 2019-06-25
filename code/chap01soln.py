@@ -74,7 +74,7 @@ def main(script):
     assert(resp.pregnum.value_counts()[1] == 1267)
     assert(ValidatePregnum(resp))
 
-    print('%s: All tests passed.' % script)
+    print('%s: All tests passed.' % resp.pregnum.value_counts().sort_index())
 
 
 if __name__ == '__main__':
